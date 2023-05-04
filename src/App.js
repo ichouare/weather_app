@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Quiz from './Quiz'
+import QuizProvider from './QuizProvider';
+
 function App() {
-  return (
+  
+  return(
+    
+      <QuizProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+      <h1>Country quiz</h1>
+      <Quiz />
+      </main>
     </div>
-  );
+      </QuizProvider>
+  )
+  
 }
 
 export default App;
